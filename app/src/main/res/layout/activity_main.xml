@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DB6AC"
+    tools:context="com.example.agrendra.tug_numberkeyboard.MainActivity">
+
+    <TextView
+        android:id="@+id/tk1"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Masukan Angka 1"
+        android:textSize="20dp"
+        android:textColor="#E0F2F1"/>
+
+    <EditText
+        android:id="@+id/n1"
+        android:layout_below="@+id/tk1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="#E0F2F1"/>
+
+    <EditText
+        android:id="@+id/n2"
+        android:layout_below="@+id/tk2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="#E0F2F1"/>
+
+    <TextView
+        android:id="@+id/tk2"
+        android:layout_below="@+id/n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Masukan Angka 2"
+        android:textSize="20dp"
+        android:textColor="#E0F2F1"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_below="@+id/n2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="#80CBC4"
+        android:text="+"
+        android:textSize="35dp"
+        android:textColor="#E0F2F1"
+        android:onClick="btn1"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_below="@+id/n2"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="#80CBC4"
+        android:text="-"
+        android:textSize="35dp"
+        android:textColor="#E0F2F1"
+        android:onClick="btn2"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_below="@+id/btn1"
+        android:layout_marginTop="10dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="#80CBC4"
+        android:text="x"
+        android:textSize="20dp"
+        android:textColor="#E0F2F1"
+        android:onClick="btn3"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_below="@+id/btn2"
+        android:layout_toRightOf="@+id/btn3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="#80CBC4"
+        android:text=":"
+        android:textSize="30dp"
+        android:textColor="#E0F2F1"
+        android:onClick="btn4"/>
+
+
+
+
+</RelativeLayout>
